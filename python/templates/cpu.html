@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  #cpuUsage {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#cpuUsage td, #cpuUsage th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#cpuUsage tr:nth-child(even){background-color: #f2f2f2;}
+
+#cpuUsage tr:hover {background-color: #ddd;}
+
+#cpuUsage th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+ </style>
+
+        <title>Cpu statictice</title>
+</head>
+<body>
+        <h1>Cpu Usage Statictices Table</h1>
+        <ul>
+	 <li> % usr    – % CPU usage at the user level </li>
+	 <li> % nice   – % CPU usage for user processes labeled</li>
+	 <li> % sys    – % CPU usage at the system (Linux kernel) level</li>
+	 <li> % iowait – % CPU usage idling waiting on a disk read/write</li>
+	 <li> % irq    – % CPU usage handling hardware interrupts</li>
+	 <li> % soft   – % CPU usage handing software interrupts </li>
+	 <li> % steal  – % CPU usage being forced to wait for a hypervisor handling other virtual processors</li>
+	 <li> % guest  – % CPU usage spent running a virtual processor</li>
+	 <li> % idle   – % CPU usage on idle time (no processes, and not waiting on a disk read/write)</li>
+	</ul>
+
+	<table id="cpuUsage">
+         <tr>
+           {% autoescape false %}
+           <th>{{ headers| replace(' ','&emsp;') }}</th>
+           {% endautoescape %} 
+	 </tr>
+
+        {% for row  in  cpuusage %}
+         <tr>
+	   {% autoescape false %}
+           <td>{{ row[1] | replace(' ','&emsp;') }}</th>
+           {% endautoescape %}
+	 </tr>
+        {% endfor %}
+
+
+        </table>
+</body>
+</html>

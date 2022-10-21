@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  #memoryUsage {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#memoryUsage td, #memoryUsage th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#memoryUsage tr:nth-child(even){background-color: #f2f2f2;}
+
+#memoryUsage tr:hover {background-color: #ddd;}
+
+#memoryUsage th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+ </style>
+
+        <title>Memory statictice</title>
+</head>
+<body>
+	<h1>Memory Usage Statictices Table</h1>
+	<table id="memoryUsage">
+	 <tr>
+	{% for header  in  headers %}
+	   <th>{{ header }}</th>
+	{% endfor %}
+	 </tr>	
+	
+        {% for row  in  memoryu %}
+	 <tr>
+           <td>{{ row[1] }}</th>
+	   <td>{{ row[2] }}</th>
+	   <td>{{ row[3] }}</th>
+         </tr>
+	{% endfor %}
+
+
+	</table>
+</body>
+</html>
+
