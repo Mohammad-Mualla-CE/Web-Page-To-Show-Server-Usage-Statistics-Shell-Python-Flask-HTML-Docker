@@ -12,11 +12,11 @@ used for monitoring purposes over a defined period of time.
 
 ## Details
 
-● The Application will provide disk,memory, and cpu usage statistics for each hour over the last
+# ● The Application will provide disk,memory, and cpu usage statistics for each hour over the last
 24 hours by default
-● Provide a GET API to return CPU usage statistics for the each hour in the last 24 hours
+# ● Provide a GET API to return CPU usage statistics for the each hour in the last 24 hours
 and one to provide current usage
-● Provide a GET API to return disk usage statistics for the each hour in the last 24 hours
+# ● Provide a GET API to return disk usage statistics for the each hour in the last 24 hours
 and one to provide current usage
 ● Provide a GET API to return memory usage statistics for the each hour in the last 24
 hours and one to provide current usage
