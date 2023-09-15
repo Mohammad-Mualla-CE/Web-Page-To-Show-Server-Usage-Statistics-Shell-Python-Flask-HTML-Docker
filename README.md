@@ -28,4 +28,20 @@ used for monitoring purposes over a defined period of time.
 ## ● Database details(credentials,ip,port,..etc) should be passed to the application container using env variables
 
 
-  
+
+# Main page:
+![mainPage](https://github.com/Mohammad-Mualla-CE/Server-UsageStatistics/assets/103336547/070a3ff9-afff-4847-9cd7-6335d0b09b63)
+
+
+# Cpu Usage
+![cpuUsage](https://github.com/Mohammad-Mualla-CE/Server-UsageStatistics/assets/103336547/d9771b65-06a9-48e7-8559-764c0768964a)
+
+
+# Memory Usage
+![memoryUsage](https://github.com/Mohammad-Mualla-CE/Server-UsageStatistics/assets/103336547/3ff419e6-f97f-48e6-abaa-2d8884dc7f6c)
+
+
+# Disk Usage
+![diskUsage](https://github.com/Mohammad-Mualla-CE/Server-UsageStatistics/assets/103336547/557a933a-7482-4eeb-b66d-d5e5ada0589c)
+
+
