@@ -8,7 +8,6 @@ except Exception as e:
 
 class AppTest(unittest.TestCase):
 
-
         #Check The Response for index page:
         def test_index(self):
                 """ Check if the Response is 200 for index page"""
